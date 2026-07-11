@@ -17,12 +17,13 @@
  * Home Assistant and in a plain browser.
  */
 
-// The `+esm` endpoints let jsDelivr resolve the bare `three` imports that the
-// example modules (GLTFLoader/OrbitControls) use, so this works both in a
-// plain browser and inside Home Assistant without an import map.
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/+esm';
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js/+esm';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js/+esm';
+// Three.js is vendored locally (see ./vendor) instead of loaded from a CDN.
+// Home Assistant's Content-Security-Policy blocks external module imports, so
+// self-hosting the library is required for the card to work inside HA. The
+// relative paths resolve correctly both here and in the standalone mock-up.
+import * as THREE from './vendor/three.module.js';
+import { GLTFLoader } from './vendor/GLTFLoader.js';
+import { OrbitControls } from './vendor/OrbitControls.js';
 
 /**
  * Shaders for the flat "fill from the bottom" overlay that is laid directly on
