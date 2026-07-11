@@ -7,7 +7,7 @@ op een model van je gebouw. Elk paneel wordt herkend in een GLB-model en de
 achtergrond van het paneel vult zich van onderaf op — van **zwart (0 W)** via
 **blauw** naar **groen** bij vol vermogen.
 
-![Preview](images/preview.png)
+![Preview](images/preview.webp)
 
 ## Functies
 
