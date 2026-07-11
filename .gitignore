@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Node / dev server
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

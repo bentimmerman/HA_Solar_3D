@@ -1,0 +1,96 @@
+# PV 3D Bar-Graph — voorbeeld dashboardconfiguratie
+#
+# Plak dit als een handmatige (YAML) kaart op een Lovelace-dashboard nadat de
+# integratie via HACS + "Add Integration" is toegevoegd.
+#
+# Tip: laat `panels` eerst leeg. De kaart toont dan de automatisch gedetecteerde
+# paneel-id's op het model, zodat je ze hieronder kunt invullen.
+#
+# Alternatief: je hoeft `panels` hier niet in te vullen. Als je de mapping in
+# <config>/pv_3d_bargraph.yaml zet (bijv. het bestand dat de mock-up exporteert
+# via "YAML downloaden"), laadt de kaart die automatisch.
+
+type: custom:pv-3d-bargraph-card
+title: Zonnepanelen — live opbrengst
+model_url: /pv_3d_bargraph/house2.glb
+max_value: 370        # Wp bij vol vermogen -> volledig gevuld paneel
+unit: W
+auto_rotate: false
+tint_panels: true
+show_labels: true
+panels:
+  - id: panel_01
+    entity: sensor.pv_paneel_1_power
+    name: Paneel 1
+  - id: panel_02
+    entity: sensor.pv_paneel_2_power
+    name: Paneel 2
+  - id: panel_03
+    entity: sensor.pv_paneel_3_power
+    name: Paneel 3
+  - id: panel_04
+    entity: sensor.pv_paneel_4_power
+    name: Paneel 4
+  - id: panel_05
+    entity: sensor.pv_paneel_5_power
+    name: Paneel 5
+  - id: panel_06
+    entity: sensor.pv_paneel_6_power
+    name: Paneel 6
+  - id: panel_07
+    entity: sensor.pv_paneel_7_power
+    name: Paneel 7
+  - id: panel_08
+    entity: sensor.pv_paneel_8_power
+    name: Paneel 8
+  - id: panel_09
+    entity: sensor.pv_paneel_9_power
+    name: Paneel 9
+  - id: panel_10
+    entity: sensor.pv_paneel_10_power
+    name: Paneel 10
+  - id: panel_11
+    entity: sensor.pv_paneel_11_power
+    name: Paneel 11
+  - id: panel_12
+    entity: sensor.pv_paneel_12_power
+    name: Paneel 12
+  - id: panel_13
+    entity: sensor.pv_paneel_13_power
+    name: Paneel 13
+  - id: panel_14
+    entity: sensor.pv_paneel_14_power
+    name: Paneel 14
+  - id: panel_15
+    entity: sensor.pv_paneel_15_power
+    name: Paneel 15
+  - id: panel_16
+    entity: sensor.pv_paneel_16_power
+    name: Paneel 16
+  - id: panel_17
+    entity: sensor.pv_paneel_17_power
+    name: Paneel 17
+  - id: panel_18
+    entity: sensor.pv_paneel_18_power
+    name: Paneel 18
+  - id: panel_19
+    entity: sensor.pv_paneel_19_power
+    name: Paneel 19
+  - id: panel_20
+    entity: sensor.pv_paneel_20_power
+    name: Paneel 20
+  - id: panel_21
+    entity: sensor.pv_paneel_21_power
+    name: Paneel 21
+  - id: panel_22
+    entity: sensor.pv_paneel_22_power
+    name: Paneel 22
+  - id: panel_23
+    entity: sensor.pv_paneel_23_power
+    name: Paneel 23
+  - id: panel_24
+    entity: sensor.pv_paneel_24_power
+    name: Paneel 24
+  - id: panel_25
+    entity: sensor.pv_paneel_25_power
+    name: Paneel 25

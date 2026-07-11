@@ -1,0 +1,124 @@
+# PV 3D Bar-Graph — paneel-koppeling
+# ==================================
+# Plaats dit bestand als:
+#
+#     <config>/pv_3d_bargraph.yaml
+#
+# De integratie leest het via het endpoint /api/pv_3d_bargraph/panels en de
+# kaart gebruikt het automatisch wanneer je in de kaart zelf geen `panels:`
+# opgeeft. Dit is exact het bestand dat de mock-up genereert met de knop
+# "YAML downloaden".
+#
+# Elk item koppelt een gedetecteerd paneel-id aan een Home Assistant sensor.
+
+# Welke GLB wordt gebruikt. Standaard het meegeleverde model dat de integratie
+# serveert. Wil je een eigen model? Plaats het in
+#   custom_components/pv_3d_bargraph/frontend/
+# en verwijs ernaar als /pv_3d_bargraph/<bestand>.glb, of zet het in je
+# www-map en gebruik een /local/<bestand>.glb pad.
+# Let op: exporteer je model met dezelfde (originele) oriëntatie als house2.glb;
+# de integratie past altijd dezelfde vaste rotatie toe, zodat de plaatsing
+# identiek blijft.
+model_url: /pv_3d_bargraph/house2.glb
+
+panels:
+  - id: panel_01
+    entity: sensor.pv_paneel_1_power
+    name: Paneel 1
+    max_value: 370
+  - id: panel_02
+    entity: sensor.pv_paneel_2_power
+    name: Paneel 2
+    max_value: 370
+  - id: panel_03
+    entity: sensor.pv_paneel_3_power
+    name: Paneel 3
+    max_value: 370
+  - id: panel_04
+    entity: sensor.pv_paneel_4_power
+    name: Paneel 4
+    max_value: 370
+  - id: panel_05
+    entity: sensor.pv_paneel_5_power
+    name: Paneel 5
+    max_value: 370
+  - id: panel_06
+    entity: sensor.pv_paneel_6_power
+    name: Paneel 6
+    max_value: 370
+  - id: panel_07
+    entity: sensor.pv_paneel_7_power
+    name: Paneel 7
+    max_value: 370
+  - id: panel_08
+    entity: sensor.pv_paneel_8_power
+    name: Paneel 8
+    max_value: 370
+  - id: panel_09
+    entity: sensor.pv_paneel_9_power
+    name: Paneel 9
+    max_value: 370
+  - id: panel_10
+    entity: sensor.pv_paneel_10_power
+    name: Paneel 10
+    max_value: 370
+  - id: panel_11
+    entity: sensor.pv_paneel_11_power
+    name: Paneel 11
+    max_value: 370
+  - id: panel_12
+    entity: sensor.pv_paneel_12_power
+    name: Paneel 12
+    max_value: 370
+  - id: panel_13
+    entity: sensor.pv_paneel_13_power
+    name: Paneel 13
+    max_value: 370
+  - id: panel_14
+    entity: sensor.pv_paneel_14_power
+    name: Paneel 14
+    max_value: 370
+  - id: panel_15
+    entity: sensor.pv_paneel_15_power
+    name: Paneel 15
+    max_value: 370
+  - id: panel_16
+    entity: sensor.pv_paneel_16_power
+    name: Paneel 16
+    max_value: 370
+  - id: panel_17
+    entity: sensor.pv_paneel_17_power
+    name: Paneel 17
+    max_value: 370
+  - id: panel_18
+    entity: sensor.pv_paneel_18_power
+    name: Paneel 18
+    max_value: 370
+  - id: panel_19
+    entity: sensor.pv_paneel_19_power
+    name: Paneel 19
+    max_value: 370
+  - id: panel_20
+    entity: sensor.pv_paneel_20_power
+    name: Paneel 20
+    max_value: 370
+  - id: panel_21
+    entity: sensor.pv_paneel_21_power
+    name: Paneel 21
+    max_value: 370
+  - id: panel_22
+    entity: sensor.pv_paneel_22_power
+    name: Paneel 22
+    max_value: 370
+  - id: panel_23
+    entity: sensor.pv_paneel_23_power
+    name: Paneel 23
+    max_value: 370
+  - id: panel_24
+    entity: sensor.pv_paneel_24_power
+    name: Paneel 24
+    max_value: 370
+  - id: panel_25
+    entity: sensor.pv_paneel_25_power
+    name: Paneel 25
+    max_value: 370

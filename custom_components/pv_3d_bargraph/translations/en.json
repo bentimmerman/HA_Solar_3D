@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "PV 3D Bar-Graph",
+        "description": "Add PV 3D Bar-Graph. This loads the dashboard card. Configure the panels afterwards in the card itself."
+      }
+    },
+    "abort": {
+      "already_configured": "PV 3D Bar-Graph is already configured."
+    }
+  }
+}
